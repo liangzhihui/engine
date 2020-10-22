@@ -303,7 +303,7 @@ export function loadUuid (item, callback) {
     // 合并有冲突就丢弃此改动
     if (EDITOR && missingClass) {
         missingClass.reportMissingClass(asset);
-        missingClass.reset();
+        // missingClass.reset();
     }
 
     let deferredLoad = canDeferredLoad(asset, item, isScene);
